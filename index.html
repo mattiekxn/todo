@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary To Do</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    
+   <div class="container">
+    <div class="todo">
+        <h2>
+            To Do List 
+            <img src="images/to-do.png" alt="Diary Icon" class="title-icon">
+        </h2>
+        
+        <div class="input-group">
+            <input type="text" id="input-box" placeholder="Add a new task...">
+            <button id="add-btn">
+                <i data-lucide="plus"></i>
+                <span>Add</span>
+            </button>
+        </div>
+
+    <ul id="task-list"></ul>
+
+        <div id="empty-state" class="flex flex-col items-center justify-center py-10 opacity-50">
+            <img src="images/empty-folder.png" alt="No tasks" class="w-20 h-20 mb-4 grayscale">
+            <p class="text-slate-500 font-medium text-center">
+                ยังไม่มีงานจดไว้... <br>
+                ลองเพิ่มงานแรกของคุณดูสิ!
+            </p>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
